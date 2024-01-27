@@ -10,6 +10,9 @@
 
 <h2>Screen Shots</h2>
 
+![image](https://github.com/fasihbaig/CustomerGreyBearedTest/assets/18436257/9f681432-6bee-40c0-805c-8ee2ef0d2f2b)
+
+
 ![Screenshot 2024-01-27 162720](https://github.com/fasihbaig/CustomerGreyBearedTest/assets/18436257/19fd50f6-10fc-41fb-9dd4-1c06906c7017)
 
 
