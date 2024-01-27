@@ -1,5 +1,5 @@
 import { Customer } from "../../interfaces"
-import UniversityItemCard from "./CustomerItemCard"
+import ItemCard from "./CustomerItemCard"
 
 function CustomerList(
     { customerList, refreshList }:
@@ -13,7 +13,7 @@ function CustomerList(
                         (customerList && customerList.length > 0) ?
                             customerList.map((customer: any, index: number) => (
                                 <li key={index} className='mb-[10px]'>
-                                    <UniversityItemCard customerDetails={customer} refreshList={refreshList} />
+                                    <ItemCard customerDetails={customer} refreshList={refreshList} />
                                 </li>
                             )
                             ) :
