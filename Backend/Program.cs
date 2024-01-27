@@ -16,6 +16,20 @@ builder.Services.AddApplicationInsightsTelemetry();
 
 ConfigureServices.setupServices(builder.Services);
 
+var corsPolicy = "AllowAll";
+
+builder.Services.AddCors(
+    options => 
+        options.AddPolicy(
+            corsPolicy, 
+            policy => 
+                policy
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                   )
+        );
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -24,6 +38,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(corsPolicy);
 
 app.UseHttpsRedirection();
 
